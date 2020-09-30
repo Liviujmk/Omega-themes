@@ -67,6 +67,10 @@ h1,.txthead1 {
     }
 }
 
+.ffb{
+    color: rgb(0, 0, 0);
+}
+
 #container
 {
     overflow: hidden;
@@ -158,6 +162,7 @@ main{
 @media screen and (min-width: 67.5em) {
     .grid-item {
         padding-right: 18px;
+        padding-left: 18px;
     }
 }
 
@@ -233,13 +238,13 @@ main{
 
 .topnav {
     overflow: hidden;
-    background-color: #333;
+    background-color: rgb(255, 255, 255);
   }
   
   .topnav a {
     float: left;
     display: block;
-    color: #f2f2f2;
+    color: #000000;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -261,9 +266,11 @@ main{
   }
   
   @media screen and (max-width: 600px) {
-    .topnav a:not(:first-child) {display: none;}
+    /*.topnav a:not(:first-child) {
+        display: none;
+    }*/
     .topnav a.icon {
-      float: right;
+      /*float: right;*/
       display: block;
     }
   }
@@ -446,14 +453,20 @@ main{
     background-image: url(https://images.hdqwalls.com/wallpapers/minimalistic-abstract-colors-simple-background-5k-fc.jpg);
     /*background: darkblue;*/
     box-shadow: 0 5px 15px 0 rgba(0,0,0,0.15);
-    height: 250px;
-    width: 329px;
+    height: 460px;
+    /*width: 329px;*/
     border-radius: 9px;
     transition: all .2s ease-in-out;
 }
 
-.article-container:hover{
-    transform: scale(1.05);
+@media screen and (max-width: 500px){
+    .article-container{
+        height: 250px;
+    }
+}
+
+.hov-scale:hover{
+    transform: scale(1.03);
 }
 
 .card-text
@@ -511,6 +524,7 @@ main{
     border-radius: 10px;
     font-family: 'Nunito', sans-serif;
     color: #545454;
+    transition: all .2s ease-in-out;
 }
 
 .card-image{
