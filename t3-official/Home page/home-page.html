@@ -17,9 +17,20 @@
   <body>
     <header id="minimalistic-mainheader" class="header-navbar">
       <div class="header-navbar-content">
-        <nav class="nav-elements hnc">
-
-        </nav>
+        <!--<nav class="nav-elements hnc"></nav>-->
+        <div class="topnav" id="myTopnav">
+          <a href="#home" class="active">Home</a>
+          <a href="javascript:void(0);" class="icon" onclick="openNav()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="#">About</a>
+          <a href="#">Services</a>
+          <a href="#">Clients</a>
+          <a href="#">Contact</a>
+        </div>
       </div>
     </header>
     <div id="container">
