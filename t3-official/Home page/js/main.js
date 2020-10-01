@@ -7,14 +7,18 @@ for (var i = 0; i < btns.length; i++) {
   this.className += " active";
   });
 }
+
+// add class to nav-links
 function topnav() {
   var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
+  if (x.className === "nav-links") {
     x.className += " responsive";
   } else {
-    x.className = "topnav";
+    x.className = "nav-links";
   }
 }
+
+// sidebar-style
 function openNav() {
   document.getElementById("mySidenav").style.width = "250px";
 }
