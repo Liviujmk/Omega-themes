@@ -208,6 +208,9 @@ h5,.txthead5 {
     }
 }
 
+.underline {
+    text-decoration: underline;
+}
 
 .ffb{
     color: rgb(0, 0, 0);
@@ -259,9 +262,13 @@ main{
 }
 
 .s1
-    {
+{
         padding: 2em 0;
-    }
+}
+
+.s2 {
+    padding: 0%;
+}
 
 .grid {
     margin-top: 0;
@@ -556,6 +563,10 @@ main{
     text-align: left;
 }
 
+#related-blogs {
+    margin-top: 0%;
+}
+
 .top-text {
     font-size: 2.25em;
 }
@@ -688,7 +699,7 @@ main{
 .column {
     display: table-cell;
     float: left;
-    width: 100%; 
+    width: 49%; 
     margin-bottom: 20px;
     margin-right: 12px;
 }
