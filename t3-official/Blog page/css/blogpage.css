@@ -1,6 +1,6 @@
-.s2{
-    padding-top: 50px;
-    background-color: #eaeaea;
+.s2 {
+  padding-top: 50px;
+  background-color: #eaeaea;
 }
 
 /*Start--Article header*/
@@ -38,6 +38,7 @@
   position: relative;
   display: inline-block;
   margin-right: 16px;
+  color: #8b9199;
 }
 
 /*End--metaspecs*/
@@ -82,7 +83,8 @@
   color: #212326;
   font-size: 23px;
   line-height: 1.7;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 .mc h2 {
@@ -190,7 +192,7 @@
 }
 
 .mc-image img {
-    border-radius: 10px;
+  border-radius: 10px;
 }
 
 .mc figure img {
@@ -317,54 +319,54 @@
 }
 
 .topics {
-    margin: 0 auto 56px auto;
-    padding: 0;
-    text-align: center;
+  margin: 0 auto 56px auto;
+  padding: 0;
+  text-align: center;
 }
 
 div.topics {
-    margin-top: 64px;
-    border-top: 1px solid #eaeaea;
-    padding-top: 32px;
-    margin-left: 32px;
-    margin-right: 32px;
-    text-align: left;
+  margin-top: 64px;
+  border-top: 1px solid #c4c4c4;
+  padding-top: 32px;
+  margin-left: 32px;
+  margin-right: 32px;
+  text-align: left;
 }
 
-@media (min-width:700px) {
-    div.topics {
-      margin-bottom: 80px;
-      max-width: 600px;
-      margin-left: auto;
-      margin-right: auto;
-    }
+@media (min-width: 700px) {
+  div.topics {
+    margin-bottom: 80px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
-@media (min-width:900px) {
-    div.topics {
-      margin-left: auto;
-      margin-right: auto;
-    }
+@media (min-width: 900px) {
+  div.topics {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .topics a {
-    letter-spacing: .1em;
-    text-transform: uppercase;
-    text-decoration: none;
-    line-height: 1;
-    color: rgb(10,10,10);
-    position: relative;
-    font-weight: 500;
-    font-size: .693rem;
-    z-index: 1;
-    padding: 16px 14px 16px 14px;
-    position: relative;
-    background: #fff;
-    overflow: hidden;
-    border: 1px solid #eaeaea;
-    border-radius: 6px;
-    margin: 0 15px 10px 0;
-    display: inline-block;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-decoration: none;
+  line-height: 1;
+  color: rgb(10, 10, 10);
+  position: relative;
+  font-weight: 500;
+  font-size: 0.693rem;
+  z-index: 1;
+  padding: 16px 14px 16px 14px;
+  position: relative;
+  background: #fff;
+  overflow: hidden;
+  border: 1px solid #eaeaea;
+  border-radius: 6px;
+  margin: 0 15px 10px 0;
+  display: inline-block;
 }
 
 /*End--blogcontent*/
@@ -372,12 +374,12 @@ div.topics {
 /*Start related blogs*/
 
 .grid1::before {
-    content: "Recommended for you";
-    font-size: 1.5rem;
-    display: block;
-    text-align: center;
-    font-weight: 700;
-    width: 100%;
+  content: "Recommended for you";
+  font-size: 1.5rem;
+  display: block;
+  text-align: center;
+  font-weight: 700;
+  width: 100%;
 }
 
 .deck {
@@ -478,11 +480,15 @@ div.topics {
   font-weight: 600;
 }
 
-.card p.topic {
+.topic {
+  color: #e1593a;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
   margin-bottom: 0.5rem;
   max-height: 2rem;
   overflow: hidden;
   text-overflow: ellipsis;
+  text-transform: uppercase;
 }
 
 .card h2 {
@@ -537,10 +543,6 @@ div.topics {
   h5,
   h6 {
     font-size: 16px;
-  }
-
-  body {
-    font-size: 1.25rem;
   }
 
   .deck {
