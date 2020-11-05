@@ -16,6 +16,7 @@
 /*Start--Article title/name*/
 .article-top__title {
   margin-bottom: 0.4761904762em;
+  margin-top: 0.4em;
 }
 
 @media screen and (max-width: 46.8125em) {
@@ -484,7 +485,7 @@ div.topics {
   color: #e1593a;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.5rem !important;
   max-height: 2rem;
   overflow: hidden;
   text-overflow: ellipsis;
