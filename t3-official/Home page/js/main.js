@@ -20,9 +20,9 @@ function topnav() {
 
 // sidebar-style
 function openNav() {
-  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("nav-menu").style.width = "18em";
 }
 
 function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("nav-menu").style.width = "0";
 }
