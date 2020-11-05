@@ -6,6 +6,7 @@
 }
 :root {
   --background-color: linear-gradient(#eeeeee, #cccccc);
+  --contrast: #e1593a;
 }
 
 html {
@@ -89,8 +90,8 @@ video {
 a {
   text-decoration: none;
   cursor: pointer;
-  color: #008060;
-  font-family: "Rubik", sans-serif;
+  color: var(--contrast);
+  font-family: "Roboto", sans-serif;
 }
 
 img {
@@ -99,6 +100,10 @@ img {
 
 a img {
   border: 0;
+}
+
+a,button,[role='button'],input,label,select,textarea {
+  touch-action: manipulation
 }
 
 button {
@@ -304,6 +309,33 @@ main {
   display: block;
 }
 
+main p,main ul,main ol {
+  margin-bottom: 1em;
+  line-height: 1.5;
+  font-size: 1em
+}
+
+main p>a {
+  color: #96412e;
+  text-decoration: underline;
+  -webkit-text-decoration-line: underline;
+  text-decoration-line: underline;
+  -webkit-text-decoration-style: solid;
+  text-decoration-style: solid;
+  -webkit-text-decoration-color: currentColor;
+  text-decoration-color: currentColor;
+  -webkit-text-decoration-skip: ink;
+  text-decoration-skip-ink: auto;
+}
+
+main p>a:hover,main p>a:focus {
+  text-decoration: none
+}
+
+main p>a:active {
+  background-color: rgba(0,128,96,0.125)
+}
+
 .main-content {
   margin: 0;
   align-items: center;
@@ -333,6 +365,17 @@ main {
 
 .s2 {
   padding: 0%;
+}
+
+.s-top {
+  margin-bottom: 2.8125em;
+  text-align: center
+}
+
+@media screen and (min-width: 67.5em) {
+  .s-top {
+    margin-bottom:3.75em
+  }
 }
 
 .grid {
@@ -407,6 +450,12 @@ main {
     padding-left: 9px;
     padding-right: 9px;
   }
+}
+
+@media screen and (min-width: 46.875em) {
+  .quarter-column {
+    width: 25%
+}
 }
 
 /*.grid--equal-height,*/
@@ -541,7 +590,11 @@ main {
   font-weight: 500;
   font-family: 'Roboto', sans-serif;
   transition-property: border-color, fill;
-  transition-duration: 300ms
+  transition: 300ms;
+}
+
+.nav-element:focus, .nav-element:hover {
+  color: #96412e;
 }
 
 .nav-logo {
@@ -556,7 +609,8 @@ main {
 }
 
 .nav-logo .icon,
-.menu-icon .icon {
+.menu-icon .icon,
+.close-button .icon {
   width: 100%;
   height: 100%;
 }
@@ -586,47 +640,71 @@ main {
   }
 }
 
-.sidenav {
+.nav-menu {
   height: 100%;
   width: 0;
   position: fixed;
-  z-index: 1;
+  z-index: 1000;
   top: 0;
-  left: 0;
-  background-color: #111;
+  right: 0;
+  background-color: rgb(220 220 220);
   overflow-x: hidden;
   transition: 0.5s;
-  padding-top: 60px;
+  max-width: 100%;
 }
 
-.sidenav a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #818181;
+.menu-grid {
+  position: relative;
+  min-height: 100%;
+  padding-right: 32px;
+  padding-bottom: 32px;
+  padding-left: 32px;
+}
+
+.menu-header {
+  position: relative;
+  height: 60px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.close-button {
   display: block;
-  transition: 0.3s;
-}
-
-.sidenav a:hover {
-  color: #f1f1f1;
-}
-
-.sidenav .closebtn {
+  box-sizing: content-box;
+  width: 1.25em;
+  height: 1.25em;
+  padding: 0.75em;
+  fill: #212326;
   position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
+  top: 50%;
+  right: -0.75em;
+  transform: translateY(-50%);
 }
 
-@media screen and (max-height: 450px) {
-  .sidenav {
-    padding-top: 15px;
-  }
-  .sidenav a {
-    font-size: 18px;
-  }
+.menu-items {
+  padding-top: 16px;
+  border-top: 1px solid#8b8b8b;
+}
+
+.item {
+  display: block;
+  width: 100%;
+  color: #212b36;
+  font-size: 1em;
+  font-weight: 500;
+  padding-top: 0.625em;
+  padding-bottom: 0.625em;
+  text-align: left;
+  line-height: 1;
+  transition: color 300ms;
+}
+
+.i1 {
+  font-size: 1em;
+  font-weight: 500;
+  text-transform: normal;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 
 /*end header*/
@@ -889,7 +967,7 @@ main {
 }
 
 .card-image img {
-  height: 110px;
+  height: 122px;
   border-radius: 10px;
 }
 
