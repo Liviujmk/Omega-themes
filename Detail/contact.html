@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Sona Template" />
+    <meta name="keywords" content="Sona, unica, creative, html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>1 | Template</title>
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Cabin:400,500,600,700&display=swap" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/jQueryUI.css" />
+    <link rel="stylesheet" href="./fontawesome-free-5.15.1-web/css/all.css" />
+    <link rel="stylesheet" href="./css/flaticon.css" />
+    <script src="https://kit.fontawesome.com/581c301a01.js" crossorigin="anonymous"></script>
+</head>
+
+</head>
+
+<body>
+    <!-- Offcanvas Menu Section Begin -->
+    <div class="offcanvas-menu-overlay"></div>
+    <div class="canvas-open">
+        <i class="fas fa-bars"></i>
+    </div>
+    <div class="offcanvas-menu-wrapper">
+        <div class="canvas-close">
+            <i class="fas fa-times"></i>
+        </div>
+        <div class="search-icon search-switch">
+            <i class="fas fa-search"></i>
+        </div>
+        <div class="header-configure-area">
+            <a href="#" class="bk-btn btn-prop">Book Now</a>
+        </div>
+        <nav class="mainmenu mobile-menu">
+            <ul>
+                <li class="active"><a href="./index.html">Home</a></li>
+                <li><a href="./rooms.html">Rooms</a></li>
+                <li><a href="./about-us.html">About Us</a></li>
+                <li>
+                    <a href="./pages.html">Pages</a>
+                    <ul class="dropdown">
+                        <li><a href="./book-now.html">Book Now</a></li>
+                        <li><a href="./tos.html">Terms of Service</a></li>
+                    </ul>
+                </li>
+                <li><a href="./blog.html">Blog</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div id="mobile-menu-wrap"></div>
+        <div class="top-social">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-tripadvisor"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+        </div>
+        <ul class="top-widget">
+            <li><i class="fa fa-phone"></i><a href="tel: +40755179274"> (12) 345 67890</a></li>
+            <li><i class="fa fa-envelope"></i><a href="mailto:liviujmk@gmail.com"> info.colorlib@gmail.com</a></li>
+        </ul>
+    </div>
+    <!-- Offcanvas Menu Section End -->
+    <!-- Header Section Begin -->
+    <header class="header-section">
+        <div class="top-nav">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <ul class="tn-left">
+                            <li><i class="fa fa-phone"></i> (12) 345 67890</li>
+                            <li><i class="fa fa-envelope"></i> info.colorlib@gmail.com</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="menu-item">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-2">
+                        <div class="logo">
+                            <a href="./1.html">
+                                <img src="data:image/webp;base64,UklGRlgCAABXRUJQVlA4TEsCAAAvVcAGEM9AkG1TjVnf+goCgSSN/V3mEgikOI7RNsg20ilU4VjOX+URPpHqcWcfABQAAEMhQbbttm3eBYjyiWanc/9LRUnjAiL6PwFaDjOzWy9bL9ahRvpr3BC7pBbBMd6iQdbaAL1lwGsf3mNAPqj4tyhgB3KvcUM+iddbFHDjIIddNwekuukRbBoZfDnrdgE4KycDCAeHBmYWIC+6twhV6j5ZhHKS8GZmHvKJEnC130r4LkkJ8hRuNcga/pbkuHbjImk2sKNxAaR+ZtA0Dwddql7qkJSyJAUYm4uoXTnSCMypH3RIWmfIUjapQup+bNoq48YqQTuTbsec+iZD3RTwUutSAUu3Zg990SFrHWD8jmQT3CuH07YBQ7OBeS3dLkPbOJz+pE2kqUHYDaDvoq2AsXA4rRtcf0QjAZgkg7TTQQI3Fh2c5gZxYxD/jFQBxu8MYCwCRC0rXAuDvImQ/5QKcEvpqIPT0oOtDOIig62GAzvp1BNdYL9TIK4ctFWGvEhwr24P99l9lBcGYZfBFgOc1hHst0KCetLIR7Yo4HYXjEWDsAlQfqdi0E4q7ihBkwbQVhWSlhXSxkOTLCqDLUIy6JJF6eP7V1Wwg+EIkpQgrQJ+rG6wky5dRQXiZK6nRbj18et5vlWg7AKuT91BnQzXtLaTayqXNByuSw1TnoqXvj3P83Mi1qlcuKZlc5DNAlfTn8gQzXVJN1xmmFQgmmvS9+d5flRSZm86NA/EW4dHI0LsmssFsUpShtgkfT7P82VoSMPmppf88v2LAAA="
+                                    alt="" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-10">
+                        <div class="nav-menu">
+                            <nav class="mainmenu">
+                                <ul>
+                                    <li><a href="./index.html">Home</a></li>
+                                    <li><a href="./rooms.html">Rooms</a></li>
+                                    <li><a href="./about-us.html">About Us</a></li>
+                                    <li>
+                                        <a href="./pages.html">Pages</a>
+                                        <ul class="dropdown">
+                                            <li><a href="./book-now.html">Book Now</a></li>
+                                            <li><a href="./tos.html">Terms of Service</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="./blogs.html">Blog</a></li>
+                                    <li class="active"><a href="./contact.html">Contact</a></li>
+                                </ul>
+                            </nav>
+                            <div class="nav-right search-switch">
+                                <i class="fas fa-search"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header End -->
+    <!-- Header End -->
+    <!-- Breadcrumb Section Begin -->
+    <div class="breadcrumb-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcrumb-text">
+                        <h2>Our Rooms</h2>
+                        <div class="bt-option">
+                            <a href="./1.html">Home</a>
+                            <span>Rooms</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Breadcrumb Section End -->
+    <!-- Contact Section Begin -->
+    <section class="contact-section spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="contact-text">
+                        <h2>Contact Info</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua.</p>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td class="c-o">Address:</td>
+                                    <td>856 Cordia Extension Apt. 356, Lake, US</td>
+                                </tr>
+                                <tr>
+                                    <td class="c-o">Phone:</td>
+                                    <td>(12) 345 67890</td>
+                                </tr>
+                                <tr>
+                                    <td class="c-o">Email:</td>
+                                    <td>info.colorlib@gmail.com</td>
+                                </tr>
+                                <tr>
+                                    <td class="c-o">Fax:</td>
+                                    <td>+(12) 345 67890</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="col-lg-7 offset-lg-1">
+                    <form action="#" class="contact-form">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <input type="text" placeholder="Your Name">
+                            </div>
+                            <div class="col-lg-6">
+                                <input type="text" placeholder="Your Email">
+                            </div>
+                            <div class="col-lg-12">
+                                <grammarly-extension
+                                    style="position: absolute; top: 0px; left: 0px; pointer-events: none;"
+                                    class="_1KJtL"></grammarly-extension>
+                                <textarea placeholder="Your Message" spellcheck="false"></textarea>
+                                <button type="submit" class="btn-prop">Submit Now</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d820.8616981783919!2d26.304655471869072!3d47.582672208632424!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDfCsDM0JzU3LjUiTiAyNsKwMTgnMTYuMCJF!5e1!3m2!1sen!2sbd!4v1605633939013!5m2!1sen!2sbd"
+                    width="600" height="650" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                    tabindex="0"></iframe>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Section End -->
+    <!-- Footer Section Begin -->
+    <footer class="footer-section">
+        <div class="container">
+            <div class="footer-text">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="ft-about">
+                            <div class="logo">
+                                <a href="#">
+                                    <img src="https://dammedia.ledvance.info/media/img/asset-4086347//c,x,0,y,1058,w,4165,h,2342/s,x,1600,y,0/iStock-185270129.jpg"
+                                        alt="" />
+                                </a>
+                            </div>
+                            <p>
+                                We inspire and reach millions of travelers<br />
+                                across 90 local websites
+                            </p>
+                            <div class="fa-social">
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-tripadvisor"></i></a>
+                                <a href="#"><i class="fa fa-instagram"></i></a>
+                                <a href="#"><i class="fa fa-youtube-play"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 offset-lg-1">
+                        <div class="ft-contact">
+                            <h6>Contact Us</h6>
+                            <ul>
+                                <li><i class="fas fa-phone"></i><a href="tel:+18002684686">+18002684686</a></li>
+                                <li><i class="fas fa-envelope"></i><a href="mailto:liviujmk@gmail.com">
+                                        liviujmkb@gmail.com</a></li>
+                                <li><i class="fas fa-map-marker-alt"></i> 856 Cordia Extension Apt. 356, Lake, United
+                                    State</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 offset-lg-1">
+                        <div class="ft-newslatter">
+                            <h6>New latest</h6>
+                            <p>Get the latest updates and offers.</p>
+                            <form action="#" class="fn-form">
+                                <input type="text" placeholder="Email" />
+                                <button type="submit" class="btn-prop"><i class="fa fa-send"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-option">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <ul>
+                            <li><a href="./contact.html">Contact</a></li>
+                            <li><a href="./tos.html">Terms of Service</a></li>
+                            <li><a href="./book-now.html">Book Now</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="co-text">
+                            <p>
+                                &copy;
+                                <script>
+                                    document.write(new Date().getFullYear());
+                                </script>
+                                , your-company-name Powered by Omega
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+    <!-- Search model Begin -->
+    <div class="search-model">
+        <div class="h-100 d-flex align-items-center justify-content-center">
+            <div class="search-close-switch">
+                <i class="fas fa-times">
+                </i>
+            </div>
+            <form class="search-model-form">
+                <input type="text" id="search-input" placeholder="Search here....." />
+            </form>
+        </div>
+    </div>
+    <script src="./js/1.js"></script>
+    <script src="./js/2.js"></script>
+    <script>
+        eval(mod_pagespeed_rmWKRkYI4O);
+    </script>
+    <script>
+        eval(mod_pagespeed_VYn8JtcKO1);
+    </script>
+    <script>
+        eval(mod_pagespeed_FPGo1xFoB0);
+    </script>
+    <script src="./js/3.js"></script>
+    <script src="./js/jqueryUI.js"></script>
+    <script src="./js/4.js"></script>
+    <script>
+        eval(mod_pagespeed_syYlbZp0KE);
+    </script>
+    <script>
+        eval(mod_pagespeed_KQ29PzGXBT);
+    </script>
+    <script>
+        //<![CDATA[
+        "use strict";
+        (function ($) {
+            $(window).on("load", function () {
+                $(".loader").fadeOut();
+                $("#preloder").delay(200).fadeOut("slow");
+            });
+            $(".set-bg").each(function () {
+                var bg = $(this).data("setbg");
+                $(this).css("background-image", "url(" + bg + ")");
+            });
+            $(".canvas-open").on("click", function () {
+                $(".offcanvas-menu-wrapper").addClass("show-offcanvas-menu-wrapper");
+                $(".offcanvas-menu-overlay").addClass("active");
+            });
+            $(".canvas-close, .offcanvas-menu-overlay").on("click", function () {
+                $(".offcanvas-menu-wrapper").removeClass(
+                    "show-offcanvas-menu-wrapper"
+                );
+                $(".offcanvas-menu-overlay").removeClass("active");
+            });
+            $(".search-switch").on("click", function () {
+                $(".search-model").fadeIn(400);
+            });
+            $(".search-close-switch").on("click", function () {
+                $(".search-model").fadeOut(400, function () {
+                    $("#search-input").val("");
+                });
+            });
+            $(".mobile-menu").slicknav({
+                prependTo: "#mobile-menu-wrap",
+                allowParentLinks: true,
+            });
+            $(".hero-slider").owlCarousel({
+                loop: true,
+                margin: 0,
+                items: 1,
+                dots: true,
+                animateOut: "fadeOut",
+                animateIn: "fadeIn",
+                smartSpeed: 1200,
+                autoHeight: false,
+                autoplay: true,
+                mouseDrag: false,
+            });
+            $(".testimonial-slider").owlCarousel({
+                items: 1,
+                dots: false,
+                autoplay: true,
+                loop: true,
+                smartSpeed: 1200,
+                nav: true,
+                navText: [
+                    "<i class='fas fa-arrow-left'></i>",
+                    "<i class='fas fa-arrow-right'></i>",
+                ],
+            });
+            $(".video-popup").magnificPopup({ type: "iframe" });
+            $(".date-input").datepicker({ minDate: 0, dateFormat: "dd MM, yy" });
+            $("select").niceSelect();
+        })(jQuery);
+        //]]>
+    </script>
+</body>
+
+</html>

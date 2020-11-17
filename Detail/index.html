@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="description" content="Sona Template" />
+  <meta name="keywords" content="Sona, unica, creative, html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>1 | Template</title>
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css?family=Lora:400,700&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cabin:400,500,600,700&display=swap" rel="stylesheet" />
+  <!-- Css Styles -->
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/jQueryUI.css" />
+  <link rel="stylesheet" href="./fontawesome-free-5.15.1-web/css/all.css" />
+  <link rel="stylesheet" href="./css/flaticon.css" />
+  <script src="https://kit.fontawesome.com/581c301a01.js" crossorigin="anonymous"></script>
+</head>
+
+</head>
+
+<body>
+  <!-- Offcanvas Menu Section Begin -->
+  <div class="offcanvas-menu-overlay"></div>
+  <div class="canvas-open">
+    <i class="fas fa-bars"></i>
+  </div>
+  <div class="offcanvas-menu-wrapper">
+    <div class="canvas-close">
+      <i class="fas fa-times"></i>
+    </div>
+    <div class="search-icon search-switch">
+      <i class="fas fa-search"></i>
+    </div>
+    <div class="header-configure-area">
+      <a href="#" class="bk-btn btn-prop">Book Now</a>
+    </div>
+    <nav class="mainmenu mobile-menu">
+      <ul>
+        <li class="active"><a href="./index.html">Home</a></li>
+        <li><a href="./rooms.html">Rooms</a></li>
+        <li><a href="./about-us.html">About Us</a></li>
+        <li>
+          <a href="./pages.html">Pages</a>
+          <ul class="dropdown">
+            <li><a href="./book-now.html">Book Now</a></li>
+            <li><a href="./tos.html">Terms of Service</a></li>
+          </ul>
+        </li>
+        <li><a href="./blog.html">Blog</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div id="mobile-menu-wrap"></div>
+    <div class="top-social">
+      <a href="#"><i class="fa fa-facebook"></i></a>
+      <a href="#"><i class="fa fa-twitter"></i></a>
+      <a href="#"><i class="fa fa-tripadvisor"></i></a>
+      <a href="#"><i class="fa fa-instagram"></i></a>
+    </div>
+    <ul class="top-widget">
+      <li><i class="fa fa-phone"></i><a href="tel: +40755179274"> (12) 345 67890</a></li>
+      <li><i class="fa fa-envelope"></i><a href="mailto:liviujmk@gmail.com"> info.colorlib@gmail.com</a></li>
+    </ul>
+  </div>
+  <!-- Offcanvas Menu Section End -->
+  <!-- Header Section Begin -->
+  <header class="header-section">
+    <div class="top-nav">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <ul class="tn-left">
+              <li><i class="fa fa-phone"></i> (12) 345 67890</li>
+              <li><i class="fa fa-envelope"></i> info.colorlib@gmail.com</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="menu-item">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-2">
+            <div class="logo">
+              <a href="./1.html">
+                <img
+                  src="data:image/webp;base64,UklGRlgCAABXRUJQVlA4TEsCAAAvVcAGEM9AkG1TjVnf+goCgSSN/V3mEgikOI7RNsg20ilU4VjOX+URPpHqcWcfABQAAEMhQbbttm3eBYjyiWanc/9LRUnjAiL6PwFaDjOzWy9bL9ahRvpr3BC7pBbBMd6iQdbaAL1lwGsf3mNAPqj4tyhgB3KvcUM+iddbFHDjIIddNwekuukRbBoZfDnrdgE4KycDCAeHBmYWIC+6twhV6j5ZhHKS8GZmHvKJEnC130r4LkkJ8hRuNcga/pbkuHbjImk2sKNxAaR+ZtA0Dwddql7qkJSyJAUYm4uoXTnSCMypH3RIWmfIUjapQup+bNoq48YqQTuTbsec+iZD3RTwUutSAUu3Zg990SFrHWD8jmQT3CuH07YBQ7OBeS3dLkPbOJz+pE2kqUHYDaDvoq2AsXA4rRtcf0QjAZgkg7TTQQI3Fh2c5gZxYxD/jFQBxu8MYCwCRC0rXAuDvImQ/5QKcEvpqIPT0oOtDOIig62GAzvp1BNdYL9TIK4ctFWGvEhwr24P99l9lBcGYZfBFgOc1hHst0KCetLIR7Yo4HYXjEWDsAlQfqdi0E4q7ihBkwbQVhWSlhXSxkOTLCqDLUIy6JJF6eP7V1Wwg+EIkpQgrQJ+rG6wky5dRQXiZK6nRbj18et5vlWg7AKuT91BnQzXtLaTayqXNByuSw1TnoqXvj3P83Mi1qlcuKZlc5DNAlfTn8gQzXVJN1xmmFQgmmvS9+d5flRSZm86NA/EW4dHI0LsmssFsUpShtgkfT7P82VoSMPmppf88v2LAAA="
+                  alt="" />
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-10">
+            <div class="nav-menu">
+              <nav class="mainmenu">
+                <ul>
+                  <li class="active"><a href="./index.html">Home</a></li>
+                  <li><a href="./rooms.html">Rooms</a></li>
+                  <li><a href="./about-us.html">About Us</a></li>
+                  <li>
+                    <a href="./pages.html">Pages</a>
+                    <ul class="dropdown">
+                      <li><a href="./book-now.html">Book Now</a></li>
+                      <li><a href="./tos.html">Terms of Service</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="./blogs.html">Blog</a></li>
+                  <li><a href="./contact.html">Contact</a></li>
+                </ul>
+              </nav>
+              <div class="nav-right search-switch">
+                <i class="fas fa-search"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- Header End -->
+  <!-- Hero Section Begin -->
+  <section class="hero-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="hero-text">
+            <h1>Sona A Luxury Hotel</h1>
+            <p>
+              Here are the best hotel booking sites, including recommendations
+              for international travel and for finding low-priced hotel rooms.
+            </p>
+            <a href="#" class="primary-btn">Discover Now</a>
+          </div>
+        </div>
+        <div class="col-xl-4 col-lg-5 offset-xl-2 offset-lg-1">
+          <div class="booking-form">
+            <h3>Book your room </h3>
+            <form action="#">
+              <div class="check-date">
+                <label for="date-in">Check In:</label>
+                <input type="date" class="date-input hasDatepicker" id="date-in" />
+                <!--<i class="fas fa-calendar-alt"></i>-->
+              </div>
+              <div class="check-date">
+                <label for="date-out">Check Out:</label>
+                <input type="date" class="date-input hasDatepicker" id="date-out" />
+                <!--<i class="fas fa-calendar-alt"></i>-->
+              </div>
+              <div class="select-option">
+                <label for="guest">Guests:</label>
+                <select id="guest" style="display: none">
+                  <option value="">2 Adults</option>
+                  <option value="">3 Adults</option>
+                </select>
+                <div class="nice-select" tabindex="0">
+                  <span class="current">2 Adults</span>
+                  <ul class="list">
+                    <li data-value="" class="option selected">2 Adults</li>
+                    <li data-value="" class="option">3 Adults</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="select-option">
+                <label for="room">Room:</label>
+                <select id="room" style="display: none">
+                  <option value="">1 Room</option>
+                  <option value="">2 Room</option>
+                </select>
+                <div class="nice-select" tabindex="0">
+                  <span class="current">1 Room</span>
+                  <ul class="list">
+                    <li data-value="" class="option selected">1 Room</li>
+                    <li data-value="" class="option">2 Room</li>
+                  </ul>
+                </div>
+              </div>
+              <button type="submit" class="btn-prop">Check Availability</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-slider owl-carousel">
+      <div class="hs-item set-bg" data-setbg="https://cf.bstatic.com/images/hotel/max1280x900/204/204689516.jpg"></div>
+      <div class="hs-item set-bg" data-setbg="https://www.ahstatic.com/photos/9399_ho_00_p_1024x768.jpg"></div>
+      <div class="hs-item set-bg" data-setbg="https://cf.bstatic.com/images/hotel/max1024x768/215/215752622.jpg"></div>
+    </div>
+  </section>
+  <!-- Hero Section End -->
+  <!-- About Us Section Begin -->
+  <section class="aboutus-section spad">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="about-text">
+            <div class="section-title">
+              <span>About Us</span>
+              <h2>Intercontinental LA <br />Westlake Hotel</h2>
+            </div>
+            <p class="f-para">
+              Sona.com is a leading online accommodation site. We’re
+              passionate about travel. Every day, we inspire and reach
+              millions of travelers across 90 local websites in 41 languages.
+            </p>
+            <p class="s-para">
+              So when it comes to booking the perfect hotel, vacation rental,
+              resort, apartment, guest house, or tree house, we’ve got you
+              covered.
+            </p>
+            <a href="./about-us.html" class="primary-btn about-btn">Read More</a>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="about-pic">
+            <div class="row">
+              <div class="col-sm-6">
+                <img
+                  src="https://dammedia.ledvance.info/media/img/asset-4086347//c,x,0,y,1058,w,4165,h,2342/s,x,1600,y,0/iStock-185270129.jpg"
+                  alt="" />
+              </div>
+              <div class="col-sm-6">
+                <img
+                  src="https://dammedia.ledvance.info/media/img/asset-4086347//c,x,0,y,1058,w,4165,h,2342/s,x,1600,y,0/iStock-185270129.jpg"
+                  alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- About Us Section End -->
+  <!-- Services Section End -->
+  <section class="services-section spad">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="section-title">
+            <span>What We Do</span>
+            <h2>Discover Our Services</h2>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 col-sm-6">
+          <div class="service-item">
+            <i class="flaticon_036-parking"></i>
+            <h4>Travel Plan</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <div class="service-item">
+            <i class="flaticon_033-dinner"></i>
+            <h4>Catering Service</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <div class="service-item">
+            <i class="flaticon_026-bed"></i>
+            <h4>Babysitting</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <div class="service-item">
+            <i class="flaticon_024-towel"></i>
+            <h4>Laundry</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <div class="service-item">
+            <i class="flaticon_044-clock-1"></i>
+            <h4>Hire Driver</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <div class="service-item">
+            <i class="flaticon_012-cocktail"></i>
+            <h4>Bar & Drink</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Services Section End -->
+  <!-- Home Room Section Begin -->
+  <section class="hp-room-section">
+    <div class="container-fluid">
+      <div class="hp-room-items">
+        <div class="row">
+          <div class="col-lg-3 col-md-6">
+            <div class="hp-room-item set-bg"
+              data-setbg="https://dammedia.ledvance.info/media/img/asset-4086347//c,x,0,y,1058,w,4165,h,2342/s,x,1600,y,0/iStock-185270129.jpg">
+              <div class="hr-text">
+                <h3>Double Room</h3>
+                <h2>199$<span>/Pernight</span></h2>
+                <table>
+                  <tbody>
+                    <tr>
+                      <td class="r-o">Size:</td>
+                      <td>30 ft</td>
+                    </tr>
+                    <tr>
+                      <td class="r-o">Capacity:</td>
+                      <td>Max persion 5</td>
+                    </tr>
+                    <tr>
+                      <td class="r-o">Bed:</td>
+                      <td>King Beds</td>
+                    </tr>
+                    <tr>
+                      <td class="r-o">Services:</td>
+                      <td>Wifi, Television, Bathroom,...</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <a href="./room-detail.html" class="primary-btn">More Details</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="hp-room-item set-bg"
+              data-setbg="https://dammedia.ledvance.info/media/img/asset-4086347//c,x,0,y,1058,w,4165,h,2342/s,x,1600,y,0/iStock-185270129.jpg">
+              <div class="hr-text">
+                <h3>Premium King Room</h3>
+                <h2>159$<span>/Pernight</span></h2>
+                <table>
+                  <tbody>
+                    <tr>
+                      <td class="r-o">Size:</td>
+                      <td>30 ft</td>
+                    </tr>
+                    <tr>
+                      <td class="r-o">Capacity:</td>
+                      <td>Max persion 5</td>
+                    </tr>
+                    <tr>
+                      <td class="r-o">Bed:</td>
+                      <td>King Beds</td>
+                    </tr>
+                    <tr>
+                      <td class="r-o">Services:</td>
+                      <td>Wifi, Television, Bathroom,...</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <a href="#" class="primary-btn">More Details</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="hp-room-item set-bg"
+              data-setbg="https://dammedia.ledvance.info/media/img/asset-4086347//c,x,0,y,1058,w,4165,h,2342/s,x,1600,y,0/iStock-185270129.jpg">
+              <div class="hr-text">
+                <h3>Deluxe Room</h3>
+                <h2>198$<span>/Pernight</span></h2>
+                <table>
+                  <tbody>
+                    <tr>
+                      <td class="r-o">Size:</td>
+                      <td>30 ft</td>
+                    </tr>
+                    <tr>
+                      <td class="r-o">Capacity:</td>
+                      <td>Max persion 5</td>
+                    </tr>
+                    <tr>
+                      <td class="r-o">Bed:</td>
+                      <td>King Beds</td>
+                    </tr>
+                    <tr>
+                      <td class="r-o">Services:</td>
+                      <td>Wifi, Television, Bathroom,...</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <a href="#" class="primary-btn">More Details</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="hp-room-item set-bg"
+              data-setbg="https://dammedia.ledvance.info/media/img/asset-4086347//c,x,0,y,1058,w,4165,h,2342/s,x,1600,y,0/iStock-185270129.jpg">
+              <div class="hr-text">
+                <h3>Family Room</h3>
+                <h2>299$<span>/Pernight</span></h2>
+                <table>
+                  <tbody>
+                    <tr>
+                      <td class="r-o">Size:</td>
+                      <td>30 ft</td>
+                    </tr>
+                    <tr>
+                      <td class="r-o">Capacity:</td>
+                      <td>Max persion 5</td>
+                    </tr>
+                    <tr>
+                      <td class="r-o">Bed:</td>
+                      <td>King Beds</td>
+                    </tr>
+                    <tr>
+                      <td class="r-o">Services:</td>
+                      <td>Wifi, Television, Bathroom,...</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <a href="#" class="primary-btn">More Details</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Home Room Section End -->
+  <!-- Testimonial Section Begin -->
+  <section class="testimonial-section spad">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="section-title">
+            <span>Testimonials</span>
+            <h2>What Customers Say?</h2>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-8 offset-lg-2">
+          <div class="testimonial-slider owl-carousel">
+            <div class="ts-item">
+              <p>
+                After a construction project took longer than expected, my
+                husband, my daughter and I needed a place to stay for a few
+                nights. As a Chicago resident, we know a lot about our city,
+                neighborhood and the types of housing options available and
+                absolutely love our vacation at Sona Hotel 1.
+              </p>
+              <div class="ti-author">
+                <div class="rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half_alt"></i>
+                </div>
+                <h5>- Alexander Vasquez</h5>
+              </div>
+              <img src="https://preview.colorlib.com/theme/sona/img/xtestimonial-logo.png.pagespeed.ic.lQaUXYKThi.webp"
+                alt="" />
+            </div>
+            <div class="ts-item">
+              <p>
+                After a construction project took longer than expected, my
+                husband, my daughter and I needed a place to stay for a few
+                nights. As a Chicago resident, we know a lot about our city,
+                neighborhood and the types of housing options available and
+                absolutely love our vacation at Sona Hotel 2.
+              </p>
+              <div class="ti-author">
+                <div class="rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half_alt"></i>
+                </div>
+                <h5>- Alexander Vasquez</h5>
+              </div>
+              <img src="https://preview.colorlib.com/theme/sona/img/xtestimonial-logo.png.pagespeed.ic.lQaUXYKThi.webp"
+                alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Testimonial Section End -->
+  <!-- Blog Section Begin -->
+  <section class="blog-section spad">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="section-title">
+            <span>Hotel News</span>
+            <h2>Our Blog & Event</h2>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="blog-item set-bg"
+            data-setbg="https://dammedia.ledvance.info/media/img/asset-4086347//c,x,0,y,1058,w,4165,h,2342/s,x,1600,y,0/iStock-185270129.jpg">
+            <div class="bi-text">
+              <span class="b-tag">Travel Trip</span>
+              <h4><a href="#">Tremblant In Canada</a></h4>
+              <div class="b-time">
+                <i class="fa fa-clock"></i> 15th April, 2019
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="blog-item set-bg"
+            data-setbg="https://dammedia.ledvance.info/media/img/asset-4086347//c,x,0,y,1058,w,4165,h,2342/s,x,1600,y,0/iStock-185270129.jpg">
+            <div class="bi-text">
+              <span class="b-tag">Camping</span>
+              <h4><a href="#">Choosing A Static Caravan</a></h4>
+              <div class="b-time">
+                <i class="fa fa-clock"></i> 15th April, 2019
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="blog-item set-bg"
+            data-setbg="https://dammedia.ledvance.info/media/img/asset-4086347//c,x,0,y,1058,w,4165,h,2342/s,x,1600,y,0/iStock-185270129.jpg">
+            <div class="bi-text">
+              <span class="b-tag">Event</span>
+              <h4><a href="#">Copper Canyon</a></h4>
+              <div class="b-time">
+                <i class="fa fa-clock"></i> 21th April, 2019
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-8">
+          <div class="blog-item small-size set-bg"
+            data-setbg="https://dammedia.ledvance.info/media/img/asset-4086347//c,x,0,y,1058,w,4165,h,2342/s,x,1600,y,0/iStock-185270129.jpg">
+            <div class="bi-text">
+              <span class="b-tag">Event</span>
+              <h4>
+                <a href="#">Trip To Iqaluit In Nunavut A Canadian Arctic City</a>
+              </h4>
+              <div class="b-time">
+                <i class="fa fa-clock"></i> 08th April, 2019
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="blog-item small-size set-bg"
+            data-setbg="https://dammedia.ledvance.info/media/img/asset-4086347//c,x,0,y,1058,w,4165,h,2342/s,x,1600,y,0/iStock-185270129.jpg">
+            <div class="bi-text">
+              <span class="b-tag">Travel</span>
+              <h4><a href="#">Traveling To Barcelona</a></h4>
+              <div class="b-time">
+                <i class="fa fa-clock"></i> 12th April, 2019
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Blog Section End -->
+  <!-- Footer Section Begin -->
+  <footer class="footer-section">
+    <div class="container">
+      <div class="footer-text">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="ft-about">
+              <div class="logo">
+                <a href="#">
+                  <img
+                    src="https://dammedia.ledvance.info/media/img/asset-4086347//c,x,0,y,1058,w,4165,h,2342/s,x,1600,y,0/iStock-185270129.jpg"
+                    alt="" />
+                </a>
+              </div>
+              <p>
+                We inspire and reach millions of travelers<br />
+                across 90 local websites
+              </p>
+              <div class="fa-social">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-tripadvisor"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-youtube-play"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 offset-lg-1">
+            <div class="ft-contact">
+              <h6>Contact Us</h6>
+              <ul>
+                <li><i class="fas fa-phone"></i><a href="tel:+18002684686">+18002684686</a></li>
+                <li><i class="fas fa-envelope"></i><a href="mailto:liviujmk@gmail.com"> liviujmkb@gmail.com</a></li>
+                <li><i class="fas fa-map-marker-alt"></i> 856 Cordia Extension Apt. 356, Lake, United State</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 offset-lg-1">
+            <div class="ft-newslatter">
+              <h6>New latest</h6>
+              <p>Get the latest updates and offers.</p>
+              <form action="#" class="fn-form">
+                <input type="text" placeholder="Email" />
+                <button type="submit" class="btn-prop"><i class="fa fa-send"></i></button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="copyright-option">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-7">
+            <ul>
+              <li><a href="./contact.html">Contact</a></li>
+              <li><a href="./tos.html">Terms of Service</a></li>
+              <li><a href="./book-now.html">Book Now</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-5">
+            <div class="co-text">
+              <p>
+                &copy;
+                <script>
+                  document.write(new Date().getFullYear());
+                </script>
+                , your-company-name Powered by Omega
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Footer Section End -->
+  <!-- Search model Begin -->
+  <div class="search-model">
+    <div class="h-100 d-flex align-items-center justify-content-center">
+      <div class="search-close-switch">
+        <i class="fas fa-times">
+        </i>
+      </div>
+      <form class="search-model-form">
+        <input type="text" id="search-input" placeholder="Search here....." />
+      </form>
+    </div>
+  </div>
+
+  <script src="./js/1.js"></script>
+  <script src="./js/2.js"></script>
+  <script>
+    eval(mod_pagespeed_rmWKRkYI4O);
+  </script>
+  <script>
+    eval(mod_pagespeed_VYn8JtcKO1);
+  </script>
+  <script>
+    eval(mod_pagespeed_FPGo1xFoB0);
+  </script>
+  <script src="./js/3.js"></script>
+  <script src="./js/jqueryUI.js"></script>
+  <script src="./js/4.js"></script>
+  <script>
+    eval(mod_pagespeed_syYlbZp0KE);
+  </script>
+  <script>
+    eval(mod_pagespeed_KQ29PzGXBT);
+  </script>
+  <script>
+    //<![CDATA[
+    "use strict";
+    (function ($) {
+      $(window).on("load", function () {
+        $(".loader").fadeOut();
+        $("#preloder").delay(200).fadeOut("slow");
+      });
+      $(".set-bg").each(function () {
+        var bg = $(this).data("setbg");
+        $(this).css("background-image", "url(" + bg + ")");
+      });
+      $(".canvas-open").on("click", function () {
+        $(".offcanvas-menu-wrapper").addClass("show-offcanvas-menu-wrapper");
+        $(".offcanvas-menu-overlay").addClass("active");
+      });
+      $(".canvas-close, .offcanvas-menu-overlay").on("click", function () {
+        $(".offcanvas-menu-wrapper").removeClass(
+          "show-offcanvas-menu-wrapper"
+        );
+        $(".offcanvas-menu-overlay").removeClass("active");
+      });
+      $(".search-switch").on("click", function () {
+        $(".search-model").fadeIn(400);
+      });
+      $(".search-close-switch").on("click", function () {
+        $(".search-model").fadeOut(400, function () {
+          $("#search-input").val("");
+        });
+      });
+      $(".mobile-menu").slicknav({
+        prependTo: "#mobile-menu-wrap",
+        allowParentLinks: true,
+      });
+      $(".hero-slider").owlCarousel({
+        loop: true,
+        margin: 0,
+        items: 1,
+        dots: true,
+        animateOut: "fadeOut",
+        animateIn: "fadeIn",
+        smartSpeed: 1200,
+        autoHeight: false,
+        autoplay: true,
+        mouseDrag: false,
+      });
+      $(".testimonial-slider").owlCarousel({
+        items: 1,
+        dots: false,
+        autoplay: true,
+        loop: true,
+        smartSpeed: 1200,
+        nav: true,
+        navText: [
+          "<i class='fas fa-arrow-left'></i>",
+          "<i class='fas fa-arrow-right'></i>",
+        ],
+      });
+      $(".video-popup").magnificPopup({ type: "iframe" });
+      $(".date-input").datepicker({ minDate: 0, dateFormat: "dd MM, yy" });
+      $("select").niceSelect();
+    })(jQuery);
+      //]]>
+  </script>
+  <div id="ui-datepicker-div" class="ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all"
+    style="position: absolute; top: 398px; left: 1003.5px; z-index: 6; display: none;">
+    <div class="ui-datepicker-header ui-widget-header ui-helper-clearfix ui-corner-all"><a
+        class="ui-datepicker-prev ui-corner-all ui-state-disabled" title="Prev"><span
+          class="ui-icon ui-icon-circle-triangle-w">Prev</span></a><a class="ui-datepicker-next ui-corner-all"
+        data-handler="next" data-event="click" title="Next"><span
+          class="ui-icon ui-icon-circle-triangle-e">Next</span></a>
+      <div class="ui-datepicker-title"><span class="ui-datepicker-month">November</span>&nbsp;<span
+          class="ui-datepicker-year">2020</span></div>
+    </div>
+    <table class="ui-datepicker-calendar">
+      <thead>
+        <tr>
+          <th scope="col" class="ui-datepicker-week-end"><span title="Sunday">Su</span></th>
+          <th scope="col"><span title="Monday">Mo</span></th>
+          <th scope="col"><span title="Tuesday">Tu</span></th>
+          <th scope="col"><span title="Wednesday">We</span></th>
+          <th scope="col"><span title="Thursday">Th</span></th>
+          <th scope="col"><span title="Friday">Fr</span></th>
+          <th scope="col" class="ui-datepicker-week-end"><span title="Saturday">Sa</span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class=" ui-datepicker-week-end ui-datepicker-unselectable ui-state-disabled "><span
+              class="ui-state-default">1</span></td>
+          <td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">2</span></td>
+          <td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">3</span></td>
+          <td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">4</span></td>
+          <td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">5</span></td>
+          <td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">6</span></td>
+          <td class=" ui-datepicker-week-end ui-datepicker-unselectable ui-state-disabled "><span
+              class="ui-state-default">7</span></td>
+        </tr>
+        <tr>
+          <td class=" ui-datepicker-week-end ui-datepicker-unselectable ui-state-disabled "><span
+              class="ui-state-default">8</span></td>
+          <td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">9</span></td>
+          <td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">10</span></td>
+          <td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">11</span></td>
+          <td class=" ui-datepicker-days-cell-over  ui-datepicker-today" data-handler="selectDay" data-event="click"
+            data-month="10" data-year="2020"><a class="ui-state-default ui-state-highlight ui-state-hover"
+              href="#">12</a></td>
+          <td class=" " data-handler="selectDay" data-event="click" data-month="10" data-year="2020"><a
+              class="ui-state-default" href="#">13</a></td>
+          <td class=" ui-datepicker-week-end " data-handler="selectDay" data-event="click" data-month="10"
+            data-year="2020"><a class="ui-state-default" href="#">14</a></td>
+        </tr>
+        <tr>
+          <td class=" ui-datepicker-week-end " data-handler="selectDay" data-event="click" data-month="10"
+            data-year="2020"><a class="ui-state-default" href="#">15</a></td>
+          <td class=" " data-handler="selectDay" data-event="click" data-month="10" data-year="2020"><a
+              class="ui-state-default" href="#">16</a></td>
+          <td class=" " data-handler="selectDay" data-event="click" data-month="10" data-year="2020"><a
+              class="ui-state-default" href="#">17</a></td>
+          <td class=" " data-handler="selectDay" data-event="click" data-month="10" data-year="2020"><a
+              class="ui-state-default" href="#">18</a></td>
+          <td class=" " data-handler="selectDay" data-event="click" data-month="10" data-year="2020"><a
+              class="ui-state-default" href="#">19</a></td>
+          <td class=" " data-handler="selectDay" data-event="click" data-month="10" data-year="2020"><a
+              class="ui-state-default" href="#">20</a></td>
+          <td class=" ui-datepicker-week-end " data-handler="selectDay" data-event="click" data-month="10"
+            data-year="2020"><a class="ui-state-default" href="#">21</a></td>
+        </tr>
+        <tr>
+          <td class=" ui-datepicker-week-end " data-handler="selectDay" data-event="click" data-month="10"
+            data-year="2020"><a class="ui-state-default" href="#">22</a></td>
+          <td class=" " data-handler="selectDay" data-event="click" data-month="10" data-year="2020"><a
+              class="ui-state-default" href="#">23</a></td>
+          <td class=" " data-handler="selectDay" data-event="click" data-month="10" data-year="2020"><a
+              class="ui-state-default" href="#">24</a></td>
+          <td class=" " data-handler="selectDay" data-event="click" data-month="10" data-year="2020"><a
+              class="ui-state-default" href="#">25</a></td>
+          <td class=" " data-handler="selectDay" data-event="click" data-month="10" data-year="2020"><a
+              class="ui-state-default" href="#">26</a></td>
+          <td class=" " data-handler="selectDay" data-event="click" data-month="10" data-year="2020"><a
+              class="ui-state-default" href="#">27</a></td>
+          <td class=" ui-datepicker-week-end " data-handler="selectDay" data-event="click" data-month="10"
+            data-year="2020"><a class="ui-state-default" href="#">28</a></td>
+        </tr>
+        <tr>
+          <td class=" ui-datepicker-week-end " data-handler="selectDay" data-event="click" data-month="10"
+            data-year="2020"><a class="ui-state-default" href="#">29</a></td>
+          <td class=" " data-handler="selectDay" data-event="click" data-month="10" data-year="2020"><a
+              class="ui-state-default" href="#">30</a></td>
+          <td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td>
+          <td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td>
+          <td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td>
+          <td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td>
+          <td class=" ui-datepicker-week-end ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">
+            &nbsp;</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+
+</html>
