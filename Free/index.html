@@ -1,0 +1,735 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Hotel</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="./fontawesome-free-5.15.1-web/css/all.css">
+    <link rel="stylesheet" href="./css/style1.css">
+    <link rel="stylesheet" href="./css/style2.css">
+    <script src="https://kit.fontawesome.com/581c301a01.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+
+</head>
+
+<body class="myBody">
+    <header>
+
+        <div class="header-area header-sticky">
+            <div class="main-header">
+                <div class="container">
+                    <div class="row align-items-center">
+
+                        <div class="col-xl-2 col-lg-2">
+                            <div class="logo">
+                                <a href="index.html">
+                                    <img src="https://preview.colorlib.com/theme/marian/assets/img/logo/logo.png" alt=""
+                                        data-pagespeed-url-hash="1320326794"
+                                        onload="pagespeed.CriticalImages.checkImageForCriticality(this)">
+                                </a>
+                                <i class="fas fa-bars hamburger-menuicon" onclick="openNav()"></i>
+                            </div>
+                        </div>
+                        <div class="col-xl-8 col-lg-8">
+
+                            <div class="main-menu f-right d-none d-lg-block">
+                                <nav>
+                                    <ul id="navigation">
+                                        <li class="active"><a href="index.html">Home</a></li>
+                                        <li><a href="about.html">About</a></li>
+                                        <li><a href="services.html">Service</a></li>
+                                        <li><a href="blogs.html">Blog</a></li>
+                                        <li><a href="#">Pages</a>
+                                            <ul class="submenu">
+                                                <li><a href="tos.html">Terms of service</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="contact.html">Contact</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-2">
+
+                            <div class="header-btn">
+                                <a href="#exampleModal" class="btn btn1 d-none d-lg-block btn-prop" data-toggle="modal"
+                                    data-target="#exampleModal">Book Online</a>
+                            </div>
+                        </div>
+                        <div class="nav-menu" id="nav-menu">
+                            <div class="menu-grid">
+                                <div class="menu-header">
+                                    <div class="nav-logo">
+                                        <img src="https://preview.colorlib.com/theme/marian/assets/img/logo/logo.png"
+                                            alt="" data-pagespeed-url-hash="1320326794"
+                                            onload="pagespeed.CriticalImages.checkImageForCriticality(this)">
+                                    </div>
+                                    <button name="button" type="button" class="close-button" onclick="closeNav()"
+                                        id="mybutton">
+                                        <i class="fas fa-times"></i>
+                                    </button>
+                                </div>
+                                <div class="menu-content">
+                                    <ul class="menu-items">
+                                        <li class="menu-items__item">
+                                            <a name="button" type="button" class="item i1" href="index.html">Home</a>
+                                        </li>
+                                        <li class="menu-items__item">
+                                            <a name="button" type="button" class="item i1" href="about.html">About</a>
+                                        </li>
+                                        <li class="menu-items__item">
+                                            <a name="button" type="button" class="item i1" href="services.html">Services</a>
+                                        </li>
+                                        <li class="menu-items__item">
+                                            <a name="button" type="button" class="item i1" href="blogs.html">Our Blog</a>
+                                        </li>
+                                        <li class="menu-items__item">
+                                            <a name="button" type="button" class="item i1" data-toggle="collapse"
+                                                href="#collapseExample" role="button" aria-expanded="false"
+                                                aria-controls="collapseExample">Pages
+                                                <i class="fas fa-chevron-down float-right"></i>
+                                            </a>
+
+                                            <div class="collapse" id="collapseExample">
+                                                <div class="card card-body">
+                                                    <a href="tos.html">Terms of Service</a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="menu-items__item">
+                                            <a name="button" type="button" class="item i1" href="contact.html">Contact</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </header>
+    <main>
+
+        <div class="slider-area">
+
+            <div class="slider-active dot-style">
+                <div class="single-slider hero-overly slider-height d-flex align-items-center"
+                    data-background="img/manuel-moreno-DGa0LQ0yDPc-unsplash.jpg"
+                    style="background-image: url(img/manuel-moreno-DGa0LQ0yDPc-unsplash.jpg) !important">
+                    <div class="container">
+                        <div class="row justify-content-center text-center">
+                            <div class="col-xl-9">
+                                <div class="h1-slider-caption">
+                                    <h1 data-animation="fadeInUp" data-delay=".4s">top hotel in the city</h1>
+                                    <h3 data-animation="fadeInDown" data-delay=".4s">Hotel & Resourt</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="single-slider hero-overly slider-height d-flex align-items-center"
+                    data-background="img/manuel-moreno-DGa0LQ0yDPc-unsplash.jpg"
+                    style="background-image: url(img/manuel-moreno-DGa0LQ0yDPc-unsplash.jpg) !important">
+                    <div class="container">
+                        <div class="row justify-content-center text-center">
+                            <div class="col-xl-9">
+                                <div class="h1-slider-caption">
+                                    <h1 data-animation="fadeInUp" data-delay=".4s">top hotel in the city</h1>
+                                    <h3 data-animation="fadeInDown" data-delay=".4s">Hotel & Resourt</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="single-slider hero-overly slider-height d-flex align-items-center"
+                    data-background="img/franz-schekolin-zSnZrRjFxm4-unsplash.jpg"
+                    style="background-image: url(img/franz-schekolin-zSnZrRjFxm4-unsplash.jpg) !important">
+                    <div class="container">
+                        <div class="row justify-content-center text-center">
+                            <div class="col-xl-9">
+                                <div class="h1-slider-caption">
+                                    <h1 data-animation="fadeInUp" data-delay=".4s">top hotel in the city</h1>
+                                    <h3 data-animation="fadeInDown" data-delay=".4s">Hotel & Resourt</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="booking-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <form action="">
+                            <div class="booking-wrap d-flex justify-content-between align-items-center">
+
+                                <div class="single-select-box mb-30">
+
+                                    <div class="boking-tittle">
+                                        <span> Check In Date:</span>
+                                    </div>
+                                    <div class="boking-datepicker">
+                                        <input placeholder="10/12/2020" type="date" class="date-box">
+                                    </div>
+                                </div>
+
+                                <div class="single-select-box mb-30">
+
+                                    <div class="boking-tittle">
+                                        <span>Check OutDate:</span>
+                                    </div>
+                                    <div class="boking-datepicker">
+                                        <input placeholder="12/12/2020" type="date" class="date-box">
+                                    </div>
+                                </div>
+
+                                <div class="single-select-box mb-30">
+                                    <div class="boking-tittle">
+                                        <span>Adults:</span>
+                                    </div>
+                                    <div class="select-this">
+                                        <form action="#">
+                                            <div class="select-itms">
+                                                <select name="select" id="select1">
+                                                    <option value="">1</option>
+                                                    <option value="">2</option>
+                                                    <option value="">3</option>
+                                                    <option value="">4</option>
+                                                </select>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+
+                                <div class="single-select-box mb-30">
+                                    <div class="boking-tittle">
+                                        <span>Children:</span>
+                                    </div>
+                                    <div class="select-this">
+                                        <form action="#">
+                                            <div class="select-itms">
+                                                <select name="select" id="select2">
+                                                    <option value="">1</option>
+                                                    <option value="">2</option>
+                                                    <option value="">3</option>
+                                                    <option value="">4</option>
+                                                </select>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+
+                                <div class="single-select-box mb-30">
+                                    <div class="boking-tittle">
+                                        <span>Rooms:</span>
+                                    </div>
+                                    <div class="select-this">
+                                        <form action="#">
+                                            <div class="select-itms">
+                                                <select name="select" id="select3">
+                                                    <option value="">1</option>
+                                                    <option value="">2</option>
+                                                    <option value="">3</option>
+                                                    <option value="">4</option>
+                                                </select>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+
+                                <div class="single-select-box pt-45 mb-30">
+                                    <a href="#" class="btn select-btn btn-prop">Book Now</a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="booking-form">
+                            <h3>Book your room </h3>
+                            <form action="#">
+                                <div class="check-date">
+                                    <label for="date-in">Check In:</label>
+                                    <input type="date" class="date-input hasDatepicker" id="date-in">
+
+                                </div>
+                                <div class="check-date">
+                                    <label for="date-out">Check Out:</label>
+                                    <input type="date" class="date-input hasDatepicker" id="date-out">
+
+                                </div>
+                                <div class="select-option">
+                                    <label for="guest">Guests:</label>
+                                    <select id="guest" style="display: none">
+                                        <option value="">2 Adults</option>
+                                        <option value="">3 Adults</option>
+                                    </select>
+                                    <div class="nice-select" tabindex="0">
+                                        <span class="current">2 Adults</span>
+                                        <ul class="list">
+                                            <li data-value="" class="option selected">2 Adults</li>
+                                            <li data-value="" class="option">3 Adults</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="select-option">
+                                    <label for="room">Room:</label>
+                                    <select id="room" style="display: none">
+                                        <option value="">1 Room</option>
+                                        <option value="">2 Room</option>
+                                    </select>
+                                    <div class="nice-select" tabindex="0">
+                                        <span class="current">1 Room</span>
+                                        <ul class="list">
+                                            <li data-value="" class="option selected">1 Room</li>
+                                            <li data-value="" class="option">2 Room</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn-prop">Check Availability</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="make-customer-area customar-padding fix">
+            <div class="container-fluid p-0">
+                <div class="row">
+                    <div class="col-xl-5 col-lg-6">
+                        <div class="c-img mb-120">
+                            <img src="img/ciudad-maderas-MXbM1NrRqtI-unsplash.jpg" class="c-img_1" alt=""
+                                data-pagespeed-url-hash="4151982969"
+                                onload="pagespeed.CriticalImages.checkImageForCriticality(this)">
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4">
+                        <div class="customer-caption">
+                            <span>About our company</span>
+                            <h2>Make the customer the hero of your story</h2>
+                            <div class="caption-details">
+                                <p class="pera-dtails">Lorem ipsum dolor sit amet, consectetur adipisic- ing elit, sed
+                                    do eiusmod tempor inc. </p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.
+                                </p>
+                                <a href="#" class="btn more-btn1 btn-prop">Learn More <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="room-area">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-xl-8">
+
+                        <div class="font-back-tittle mb-45">
+                            <div class="archivment-front">
+                                <h3>Our Rooms</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xl-4 col-lg-6 col-md-6">
+
+                        <div class="single-room mb-50">
+                            <div class="room-img">
+                                <a href="room-1.html"><img src="img/edvin-johansson-rlwE8f8anOc-unsplash (1).jpg" alt=""
+                                        data-pagespeed-url-hash="2710084922"
+                                        onload="pagespeed.CriticalImages.checkImageForCriticality(this)"></a>
+                            </div>
+                            <div class="room-caption">
+                                <h3><a href="room-1.html">Classic Double Bed</a></h3>
+                                <div class="per-night">
+                                    <span><u>$</u>150 <span>/ par night</span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-6 col-md-6">
+
+                        <div class="single-room mb-50">
+                            <div class="room-img">
+                                <a href="room-1.html"><img src="img/felipepelaquim-1qvUsVrKrMI-unsplash.jpg" alt=""
+                                        data-pagespeed-url-hash="3004584843"
+                                        onload="pagespeed.CriticalImages.checkImageForCriticality(this)"></a>
+                            </div>
+                            <div class="room-caption">
+                                <h3><a href="room-1.html">Classic Double Bed</a></h3>
+                                <div class="per-night">
+                                    <span><u>$</u>150 <span>/ par night</span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-6 col-md-6">
+
+                        <div class="single-room mb-50">
+                            <div class="room-img">
+                                <a href="room-1.html"> <img src="img/franz-schekolin-zSnZrRjFxm4-unsplash.jpg" alt=""
+                                        data-pagespeed-url-hash="3299084764"
+                                        onload="pagespeed.CriticalImages.checkImageForCriticality(this)"></a>
+                            </div>
+                            <div class="room-caption">
+                                <h3><a href="room-1.html">Classic Double Bed</a></h3>
+                                <div class="per-night">
+                                    <span><u>$</u>150 <span>/ par night</span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="room-btn pt-70">
+                        <a href="#" class="btn view-btn1 btn-prop">View more <i class="fas fa-arrow-right"></i> </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <div class="dining-area dining-padding-top">
+
+            <div class="single-dining-area left-img">
+                <div class="container">
+                    <div class="row justify-content-end">
+                        <div class="col-lg-8 col-md-8">
+                            <div class="dining-caption">
+                                <span>Our resturent</span>
+                                <h3>Dining & Drinks</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod<br> tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim <br>veniam, quis
+                                    nostrud.</p>
+                                <a href="#" class="btn border-btn btn-prop">Learn More <i
+                                        class="fas fa-arrow-right"></i> </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="single-dining-area right-img">
+                <div class="container">
+                    <div class="row justify-content-start">
+                        <div class="col-lg-8 col-md-8">
+                            <div class="dining-caption text-right">
+                                <span>Our Pool</span>
+                                <h3>Swimming Pool</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod<br> tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim <br>veniam, quis
+                                    nostrud.</p>
+                                <a href="#" class="btn border-btn btn-prop">Learn More <i
+                                        class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="testimonial-area testimonial-padding">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-xl-9 col-lg-9 col-md-9">
+                        <div class="h1-testimonial-active">
+                            <div class="single-testimonial pt-65">
+                                <div class="font-back-tittle mb-105">
+                                    <div class="archivment-front">
+                                        <img src="assets/img/logo/testimonial.png" alt=""
+                                            data-pagespeed-url-hash="933585438"
+                                            onload="pagespeed.CriticalImages.checkImageForCriticality(this)">
+                                    </div>
+                                    <h3 class="archivment-back">Testimonial</h3>
+                                </div>
+                                <div class="testimonial-caption text-center">
+                                    <p>Yorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                        nostrud exercitation ullamco laboris nisi.
+                                    </p>
+                                    <div class="testimonial-ratting">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <div class="rattiong-caption">
+                                        <span>Clifford Frazier, <span>Regular Client</span> </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="single-testimonial pt-65">
+                                <div class="font-back-tittle mb-105">
+                                    <div class="archivment-front">
+                                        <img src="assets/img/logo/testimonial.png" alt=""
+                                            data-pagespeed-url-hash="933585438"
+                                            onload="pagespeed.CriticalImages.checkImageForCriticality(this)">
+                                    </div>
+                                    <h3 class="archivment-back">Testimonial</h3>
+                                </div>
+                                <div class="testimonial-caption text-center">
+                                    <p>Yorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                        nostrud exercitation ullamco laboris nisi.
+                                    </p>
+                                    <div class="testimonial-ratting">
+                                        <a href="#"><i class="fas fa-star"></i></a>
+                                        <a href="#"><i class="fas fa-star"></i></a>
+                                        <a href="#"><i class="fas fa-star"></i></a>
+                                        <a href="#"><i class="fas fa-star"></i></a>
+                                        <a href="#"><i class="fas fa-star"></i></a>
+                                    </div>
+                                    <div class="rattiong-caption">
+                                        <span>Clifford Frazier, <span>Regular Client</span> </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="b-area b-padding">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-xl-8">
+                        <div class="font-back-tittle mb-50">
+                            <div class="archivment-front">
+                                <h3>Our blog</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xl-4 col-lg-4 col-md-6">
+                        <div class="single-b mb-30">
+                            <div class="b-img">
+                                <a href="blog-name.html"><img src="img/nik-lanus-YMOHw3F1Hdk-unsplash.jpg" alt=""
+                                        data-pagespeed-url-hash="338153286"
+                                        onload="pagespeed.CriticalImages.checkImageForCriticality(this)"></a>
+                            </div>
+                            <div class="b-caption">
+                                <div class="b-cap-top d-flex justify-content-between mb-40">
+                                    <span>news</span>
+                                    <ul>
+                                    </ul>
+                                </div>
+                                <div class="b-cap-mid">
+                                    <p><a href="blog-name.html">5 Simple Tricks for Getting Stellar Hotel Service
+                                            Wherever You Are</a></p>
+                                </div>
+                                <div class="b-cap-bottom d-flex justify-content-between">
+                                    <span>Feb 28, 2020</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6">
+                        <div class="single-b mb-30">
+                            <div class="b-img">
+                                <a href="blog-name.html"> <img src="img/franz-schekolin-zSnZrRjFxm4-unsplash.jpg" alt=""
+                                        data-pagespeed-url-hash="632653207"
+                                        onload="pagespeed.CriticalImages.checkImageForCriticality(this)"></a>
+                            </div>
+                            <div class="b-caption">
+                                <div class="b-cap-top d-flex justify-content-between mb-40">
+                                    <span>news</span>
+                                    <ul>
+                                    </ul>
+                                </div>
+                                <div class="b-cap-mid">
+                                    <p><a href="blog-name.html">5 Simple Tricks for Getting Stellar Hotel Service
+                                            Wherever You Are</a></p>
+                                </div>
+                                <div class="b-cap-bottom d-flex justify-content-between">
+                                    <span>Feb 28, 2020</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6">
+                        <div class="single-b mb-30">
+                            <div class="b-img">
+                                <a href="blog-name.html"><img src="img/felipepelaquim-1qvUsVrKrMI-unsplash.jpg" alt=""
+                                        data-pagespeed-url-hash="927153128"
+                                        onload="pagespeed.CriticalImages.checkImageForCriticality(this)"></a>
+                            </div>
+                            <div class="b-caption">
+                                <div class="b-cap-top d-flex justify-content-between mb-40">
+                                    <span>news</span>
+                                    <ul>
+                                    </ul>
+                                </div>
+                                <div class="b-cap-mid">
+                                    <p><a href="blog-name.html">5 Simple Tricks for Getting Stellar Hotel Service
+                                            Wherever You Are</a></p>
+                                </div>
+                                <div class="b-cap-bottom d-flex justify-content-between">
+                                    <span>Feb 28, 2020</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer-section">
+        <div class="container">
+            <div class="footer-text">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="ft-about">
+                            <div class="logo">
+                                <a href="#">
+                                    <img src="https://dammedia.ledvance.info/media/img/asset-4086347//c,x,0,y,1058,w,4165,h,2342/s,x,1600,y,0/iStock-185270129.jpg"
+                                        alt="">
+                                </a>
+                            </div>
+                            <p>
+                                We inspire and reach millions of travelers<br>
+                                across 90 local websites
+                            </p>
+                            <div class="fa-social">
+                                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-tripadvisor" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 offset-lg-1">
+                        <div class="ft-contact">
+                            <h6>Contact Us</h6>
+                            <ul>
+                                <li><i class="fas fa-phone" aria-hidden="true"></i><a
+                                        href="tel:+18002684686">+18002684686</a></li>
+                                <li><i class="fas fa-envelope" aria-hidden="true"></i><a
+                                        href="mailto:liviujmk@gmail.com"> liviujmkb@gmail.com</a></li>
+                                <li><i class="fas fa-map-marker-alt" aria-hidden="true"></i><a
+                                        href="https://www.google.com/maps/place/Palace+of+Parliament/@44.4277218,26.0856018,798m/data=!3m1!1e3!4m5!3m4!1s0x40b1ff427bee28c1:0x2b1089f802abaddc!8m2!3d44.4275035!4d26.0873506">
+                                        856 Cordia Extension Apt. 356, Lake, United State</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 offset-lg-1">
+                        <div class="ft-contact">
+                            <h6>Quick Links</h6>
+                            <ul>
+                                <li><a href="rooms.html">Rooms</a></li>
+                                <li><a href="about.html">About Us</a></li>
+                                <li><a href="about.html">Gallery</a></li>
+                                <li><a href="blogs.html">Our Blog</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-option">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <ul>
+                            <li><a href="./contact.html">Contact</a></li>
+                            <li><a href="./tos.html">Terms of Service</a></li>
+                            <li><a href="#exampleModal" data-toggle="modal" data-target="#exampleModal">Book Now</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="co-text">
+                            <p>
+                                ©
+                                <script>
+                                    document.write(new Date().getFullYear());
+                                </script>
+                                , your-company-name Powered by Omega
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/1.js"></script>
+
+    <script src="./js/2.js"></script>
+    <script src="./js/3.js"></script>
+    <script>eval(mod_pagespeed_QTIlIxDN4o);</script>
+    <script>eval(mod_pagespeed_iXnXDEAqan);</script>
+
+    <script>eval(mod_pagespeed_7whRwN8Ih2);</script>
+
+    <script src="./js/4.js"></script>
+    <script>eval(mod_pagespeed_gBemRL49og);</script>
+    <script>eval(mod_pagespeed__O5h6OyshL);</script>
+
+    <script src="./js/5.js"></script>
+
+    <script src="./js/6.js"></script>
+    <script>eval(mod_pagespeed_UFTUmCGtOu);</script>
+    <script>eval(mod_pagespeed_h_pdKrTTeE);</script>
+    <script>eval(mod_pagespeed_EbTBe64h6p);</script>
+
+    <script>eval(mod_pagespeed_EPDeJPXkun);</script>
+    <script>eval(mod_pagespeed_$kRwUEK21w);</script>
+    <script>eval(mod_pagespeed_r8nepCXJzp);</script>
+
+    <script>eval(mod_pagespeed_P6GKuKYIVL);</script>
+    <script src="./js/7.js"></script>
+    <script>eval(mod_pagespeed_KtSaCxrCeD);</script>
+    <script>eval(mod_pagespeed_OsZzQ5zT4d);</script>
+    <script>eval(mod_pagespeed_D6RUyvSgzS);</script>
+    <script>eval(mod_pagespeed_lSFivGvfne);</script>
+
+    <script>eval(mod_pagespeed_KftslKSQKa);</script>
+    <script>eval(mod_pagespeed_CG2AfZKSnf);</script>
+</body>
+
+</html>
